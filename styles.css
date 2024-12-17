@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #06060f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+h1 {
+  position: relative;
+  color: goldenrod;
+}
+h1:hover {
+  color: aliceblue;
+}
+h1::before {
+  content: "";
+  position: absolute;
+  background-color: wheat;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -7px;
+  transition: all 0.2s;
+}
+h1:hover::before {
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: wheat;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 30px;
+  position: relative;
+}
+
+nav a:hover {
+  color: white;
+}
+nav a::before {
+  content: "";
+  position: absolute;
+  background-color: wheat;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -7px;
+  transition: all 0.2s;
+}
+nav a:hover::before {
+  width: 100%;
+}
